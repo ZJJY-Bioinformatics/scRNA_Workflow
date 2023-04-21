@@ -1,0 +1,5 @@
+cellranger_count_out
+Rplots.pdf
+scRNA_data
+test/test.meta.tsv
+run_scRNA.sh
