@@ -1,4 +1,4 @@
-#!/data/wangjiaxuan/biosoft/miniconda3/bin/python
+#!/data3/Group7/wangjiaxuan/biosoft/miniconda3/bin/python
 import argparse
 import os
 import subprocess
