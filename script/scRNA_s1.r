@@ -1,4 +1,4 @@
-#.libPaths("/hwfssz5/ST_INFECTION/HPV/wangjiaxuan/biosoft/miniconda3/envs/R/lib/R/library/")
+.libPaths("/data3/Group7/wangjiaxuan/biosoft/miniconda3/lib/R/library/")
 
 library("optparse")
 option_list <- list(
