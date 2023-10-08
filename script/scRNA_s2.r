@@ -1,3 +1,4 @@
+.libPaths("/data3/Group7/wangjiaxuan/biosoft/miniconda3/lib/R/library/")
 library("optparse")
 option_list <- list(
   make_option(c("-i","--input"),type="character"),
