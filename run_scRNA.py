@@ -56,7 +56,7 @@ def main():
                     script_file.write(f"/data3/Group7/wangjiaxuan/biosoft/cellranger-7.0.0/cellranger count --id={col2}_result --fastqs={col1} --sample={col2} --transcriptome={refer}")
             else:
                 with open(f'qsub_{col2}_cellraner_count.sh', 'w') as script_file:
-                    script_file.write(f"/data3/Group7/wangjiaxuan/biosoft/cellranger-7.0.0/cellranger count --id={col2}_result --fastqs={col1} --sa'mple={col2} --transcriptome={refer}")
+                    script_file.write(f"/data3/Group7/wangjiaxuan/biosoft/cellranger-7.0.0/cellranger count --id={col2}_result --fastqs={col1} --sample={col2} --transcriptome={refer} --include-introns")
             subprocess.call(['/data3/Group7/wangjiaxuan/biosoft/miniconda3/envs/meta/bin/python', '/data3/Group7/wangjiaxuan/script/qsub.py',"-s","2", "-g", "1g" ,"-c", "2" ,"-l", "1" ,"-r", f'qsub_{col2}_cellraner_count.sh'])
 
 if __name__ == "__main__":
