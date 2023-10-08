@@ -31,9 +31,9 @@ def main():
     print(input_file)
 
     if refer == "human":
-        refer = "/data3/wangjiaxuan/refer/cellranger/refdata-gex-GRCh38-2020-A"
+        refer = "/data3/Group7/wangjiaxuan/refer/cellranger/refdata-gex-GRCh38-2020-A"
     elif refer == "mouse":
-        refer = "/data3/wangjiaxuan/refer/cellranger/refdata-gex-mm10-2020-A"
+        refer = "/data3/Group7/wangjiaxuan/refer/cellranger/refdata-gex-mm10-2020-A"
 
     wkdir = "./cellranger_count_out"
     fq_file = input_file
@@ -53,10 +53,10 @@ def main():
             
             if  not snRNA:
                 with open(f'qsub_{col2}_cellraner_count.sh', 'w') as script_file:
-                    script_file.write(f"/data/wangjiaxuan/biosoft/cellranger-7.0.0/cellranger count --id={col2}_result --fastqs={col1} --sample={col2} --transcriptome={refer}")
+                    script_file.write(f"/data3/Group7/wangjiaxuan/biosoft/cellranger-7.0.0/cellranger count --id={col2}_result --fastqs={col1} --sample={col2} --transcriptome={refer}")
             else:
                 with open(f'qsub_{col2}_cellraner_count.sh', 'w') as script_file:
-                    script_file.write(f"/data/wangjiaxuan/biosoft/cellranger-7.0.0/cellranger count --id={col2}_result --fastqs={col1} --sa'mple={col2} --transcriptome={refer}")
+                    script_file.write(f"/data3/Group7/wangjiaxuan/biosoft/cellranger-7.0.0/cellranger count --id={col2}_result --fastqs={col1} --sa'mple={col2} --transcriptome={refer}")
             subprocess.call(['/data/wangjiaxuan/biosoft/miniconda3/envs/meta/bin/python', '/data/wangjiaxuan/script/qsub.py',"-s","2", "-g", "1g" ,"-c", "2" ,"-l", "1" ,"-r", f'qsub_{col2}_cellraner_count.sh'])
 
 if __name__ == "__main__":
