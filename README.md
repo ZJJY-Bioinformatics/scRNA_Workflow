@@ -142,7 +142,7 @@ cellranger count --no-bam\ #不需要bam文件
 
 王家轩
 
-# 维护人员
+# 贡献人员
 罗蓉蓉
 
 # 参考文献:
