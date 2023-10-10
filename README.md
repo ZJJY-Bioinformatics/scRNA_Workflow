@@ -15,8 +15,12 @@
 
 例如：
 ```shell
-/home/wangjiaxuan/scRNA/sample_1  case
-/home/wangjiaxuan/scRNA/sample_2  control
+/home/wangjiaxuan/scRNA/sample_1  case1
+/home/wangjiaxuan/scRNA/sample_2  case2
+/home/wangjiaxuan/scRNA/sample_3  case3
+/home/wangjiaxuan/scRNA/sample_1  control1
+/home/wangjiaxuan/scRNA/sample_2  control2
+/home/wangjiaxuan/scRNA/sample_3  control3
 ```
 > 注意必选是个文件夹
 
