@@ -34,7 +34,7 @@
 将上一步的meta表用`-i`参数输入即可
 
 ```shell
-./run_scRNA.py -i sample.tsv
+./run_scRNA.py -i /path/sample.tsv # 注意一定是绝对路径
 ```
 脚本会自动qsub投递，等投递任务跑完，就可以坐等结果，期间如遇到任何报错请联系脚本维护人员.
 
